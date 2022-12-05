@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f05c1454-2501-494d-8f45-9f920855dc1f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/balancer/balancer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/cache/cache.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/server/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/storage/chached.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/storage/in_memory.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/storage/redis.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/storage/redis_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/storage/storage.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/storage/ydb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="slcddm4k" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IRWziKR1Gg0Iab3mM9uXRg38M0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/asmyasnikov/Desktop/webinar-cache/internal/storage"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/internal/storage" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.ydb in-memory">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="webinar-cache" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="redis with-cache listen" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="webinar-cache" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="--backend-count=2 --storage-type=redis --dsn=&quot;localhost:6379&quot; --with-cache=true --listen=true" />
+      <kind value="PACKAGE" />
+      <package value="github.com/asmyasnikov/webinar-cache/cmd" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="redis with-cache" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="webinar-cache" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="--backend-count=2 --storage-type=redis --dsn=&quot;localhost:6379&quot; --with-cache=true" />
+      <kind value="PACKAGE" />
+      <package value="github.com/asmyasnikov/webinar-cache/cmd" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="redis without-cache" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="webinar-cache" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="--backend-count=2 --storage-type=redis --dsn=&quot;localhost:6379&quot; --with-cache=false" />
+      <kind value="PACKAGE" />
+      <package value="github.com/asmyasnikov/webinar-cache/cmd" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ydb in-memory" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="webinar-cache" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="--backend-count=2" />
+      <kind value="PACKAGE" />
+      <package value="github.com/asmyasnikov/webinar-cache/cmd" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ydb with-cache listen" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="webinar-cache" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="--backend-count=2 --storage-type=ydb --dsn=&quot;grpc://localhost:2136/local&quot; --with-cache=true --listen=true" />
+      <kind value="PACKAGE" />
+      <package value="github.com/asmyasnikov/webinar-cache/cmd" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ydb with-cache" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="webinar-cache" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="--backend-count=2 --storage-type=ydb --dsn=&quot;grpc://localhost:2136/local&quot; --with-cache=true" />
+      <kind value="PACKAGE" />
+      <package value="github.com/asmyasnikov/webinar-cache/cmd" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ydb without-cache" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="webinar-cache" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="--backend-count=2 --storage-type=ydb --dsn=&quot;grpc://localhost:2136/local&quot; --with-cache=false" />
+      <kind value="PACKAGE" />
+      <package value="github.com/asmyasnikov/webinar-cache/cmd" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_channelToId in github.com/asmyasnikov/webinar-cache/internal/storage" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="webinar-cache" />
+      <working_directory value="$PROJECT_DIR$/internal/storage" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/asmyasnikov/webinar-cache/internal/storage" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_channelToId\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="webinar-cache" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.redis with-cache listen" />
+      <item itemvalue="Go Build.redis with-cache" />
+      <item itemvalue="Go Build.redis without-cache" />
+      <item itemvalue="Go Build.ydb in-memory" />
+      <item itemvalue="Go Build.ydb with-cache listen" />
+      <item itemvalue="Go Build.ydb with-cache" />
+      <item itemvalue="Go Build.ydb without-cache" />
+      <item itemvalue="Go Test.Test_channelToId in github.com/asmyasnikov/webinar-cache/internal/storage" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.ydb with-cache listen" />
+        <item itemvalue="Go Test.Test_channelToId in github.com/asmyasnikov/webinar-cache/internal/storage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <environment>
+      <map>
+        <entry key="GOPRIVATE" value="github.com/ydb-platform" />
+      </map>
+    </environment>
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
