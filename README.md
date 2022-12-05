@@ -23,6 +23,7 @@ docker run -d --name redis -p 6379:6379 redis
 5. `--listen` - flag for subscribing on changes of data in database. Default: `false`
 6. `--host` - host/ip for start listener. Default: `localhost`
 7. `--port` - port to listen. Default: `3619`
+8. `--ttl` - time to live of cache key. Default: `1m`
 
 ## Run command for different storages
 

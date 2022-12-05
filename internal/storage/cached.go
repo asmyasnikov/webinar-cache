@@ -2,6 +2,7 @@ package storage
 
 import (
 	"context"
+	"log"
 	"time"
 
 	"github.com/asmyasnikov/webinar-cache/internal/cache"
@@ -28,6 +29,7 @@ func NewCached(ctx context.Context, s StorageListener, ttl time.Duration, listen
 	}
 	if listenChanges {
 		err := s.ListenFreeSeats(ctx, func(id string, freeSeats int64) {
+			log.Printf("modify cache key: %s (new value: %d)\n", id, freeSeats)
 			cached.cache.Set(id, freeSeats)
 		})
 		if err != nil {
@@ -43,6 +45,7 @@ func (s cachedStorage) BusIDs(ctx context.Context) (ids []string, err error) {
 
 func (s cachedStorage) FreeSeats(ctx context.Context, id string) (freeSeats int64, err error) {
 	if cachedValue, ok := s.cache.Get(id); ok {
+		log.Println("cache hit")
 		return cachedValue, nil
 	}
 	defer func() {
@@ -50,6 +53,7 @@ func (s cachedStorage) FreeSeats(ctx context.Context, id string) (freeSeats int6
 			s.cache.Set(id, freeSeats)
 		}
 	}()
+	log.Println("cache miss")
 	return s.s.FreeSeats(ctx, id)
 }
 

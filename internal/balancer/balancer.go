@@ -1,7 +1,9 @@
 package balancer
 
 import (
+	"log"
 	"net/http"
+	"strconv"
 	"sync/atomic"
 )
 
@@ -22,5 +24,6 @@ func (b *balancer) ServeHTTP(writer http.ResponseWriter, request *http.Request) 
 		counter = -counter
 	}
 	index := int(counter-1) % len(b.handlers)
+	log.Println("using backend #" + strconv.Itoa(index))
 	b.handlers[index].ServeHTTP(writer, request)
 }
